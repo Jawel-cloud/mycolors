@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+body {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(14, 14, 65, 1) 0%, rgba(255, 255, 255, 0.6) 46%, rgba(73, 11, 11, 1) 100%);
+    text-shadow: 2px 2px #FFFFFF;
+
+    h1 {
+        // color: white;
+        font-family: 'Festive';
+        font-size: 3rem;
+    }
+}
+
+.oneColor {
+    margin: 2vh 20vw;
+    height: 3vh;
+
+    .colorSquare {
+        // width: 20vw;
+        height: 2vh;
+        border: 1px solid black;
+    }
+
+    .hexCode {
+        color: white;
+        text-shadow: 2px 2px #000000;
+    }
+
+    &-Button {
+        border: 1px solid black;
+        border-radius: 10%;
+    }
+}
+
+.addButton {
+    background-color: white;
+    border-radius: 10%;
+}
+
+.addButton:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10%;
+}
