@@ -77,12 +77,14 @@ const Homepage = () => {
         return true;
     }
     return (
-        <>
+        <div className='siteWrapper'>
         <h1>My Colors</h1>
         <AddColor add={addColor} colors={colors} setColors={setColors} />
         <Filter colors={colors}/>
         <ColorList colors={colors} delete={handleDelete}/>
-        </>
+        <div className='painter'></div>
+        <div className='paints'></div>
+        </div>
     );
 }
 export default Homepage;

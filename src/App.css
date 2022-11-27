@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+body {
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#0e0e41), color-stop(46%, rgba(255, 255, 255, 0.6)), to(#490b0b));
+  background: linear-gradient(90deg, #0e0e41 0%, rgba(255, 255, 255, 0.6) 46%, #490b0b 100%);
+  text-shadow: 2px 2px #FFFFFF;
+}
+
+body h1 {
+  font-family: 'Festive';
+  font-size: 3rem;
+}
+
+.oneColor {
+  margin: 2vh 20vw;
+  height: 3vh;
+}
+
+.oneColor .colorSquare {
+  height: 2vh;
+  border: 1px solid black;
+}
+
+.oneColor .hexCode {
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+.oneColor-Button {
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+.addButton {
+  background-color: white;
+  border-radius: 10%;
+}
+
+.addButton:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+}
+/*# sourceMappingURL=App.css.map */

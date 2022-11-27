@@ -2,19 +2,48 @@
 
 body {
     text-align: center;
-    background: linear-gradient(90deg, rgba(14, 14, 65, 1) 0%, rgba(255, 255, 255, 0.6) 46%, rgba(73, 11, 11, 1) 100%);
+    background: linear-gradient(90deg, rgb(211, 211, 211) 0%, rgba(255, 255, 255, 0.6) 46%, rgb(95, 95, 95) 100%);
+    // background-image: url('./Assets/back2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     text-shadow: 2px 2px #FFFFFF;
 
     h1 {
         // color: white;
         font-family: 'Festive';
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
+.painter{
+    position: absolute;
+    background-image: url('./Assets/painter.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 5vh;
+    left: 2vw;
+    height: 50vh;
+    width: 28vw;
+
+}
+.paints{
+    position: absolute;
+    background-image: url('./Assets/paints.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50vh;
+    right: 0;
+    height: 50vh;
+    width: 30vw;
+}
+
 .oneColor {
-    margin: 2vh 20vw;
+    margin: 2vh 30vw;
     height: 3vh;
+    border: 1px solid black;
+    border-radius: 3px 30px 8px;
+    box-shadow: 4px 2px 5px black;
+
 
     .colorSquare {
         // width: 20vw;
@@ -24,22 +53,79 @@ body {
 
     .hexCode {
         color: white;
-        text-shadow: 2px 2px #000000;
+        text-shadow: 1px 1px 2px #000000;
     }
 
     &-Button {
         border: 1px solid black;
         border-radius: 10%;
+        cursor: pointer;
     }
 }
 
+input{
+    border-radius: 3px 30px 8px;
+}
 .addButton {
-    background-color: white;
+    background-color: transparent;
     border-radius: 10%;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    border: none;
+    cursor: pointer;
 }
 
 .addButton:hover {
     background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 10%;
+}
+label{
+    text-shadow: 2px 2px 2px white;
+    font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+    .painter{
+        width: 25vw;
+    
+    }
+    .paints{
+        width: 30vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    .painter{
+        width: 20vw;
+    
+    }
+    .paints{
+        width: 25vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .painter{
+        width: 20vw;
+    }
+    .paints{
+        top: 5vh;
+        width: 25vw;
+    }
+    .oneColor {
+        margin: 2vh 20vw;
+    }
+}
+@media (max-width: 600px) {
+    .painter{
+        display: none;
+    }
+    .paints{
+        display: none;
+    }
+    .oneColor {
+        margin: 2vh 5vw;
+    }
 }
